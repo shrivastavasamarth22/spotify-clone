@@ -6,6 +6,7 @@ import { BiSearch } from "react-icons/bi";
 import Button from "./Button";
 import { FaUserAlt } from "react-icons/fa";
 import { HiHome } from "react-icons/hi";
+import toast from "react-hot-toast";
 import { twMerge } from "tailwind-merge";
 import useAuthModal from "@/hooks/useAuthModal";
 import { useRouter } from "next/navigation";
@@ -35,7 +36,9 @@ const Header: React.FC<HeaderProps> = ({
         router.refresh();
 
         if (error) {
-            console.log(error);
+            toast.error(error.message);
+        } else {
+            toast.success("Successfully logged out.");
         }
     }
 
