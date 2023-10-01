@@ -5,7 +5,6 @@ import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import Button from "./Button";
 import Input from "./Input";
 import Modal from "./Modal";
-import { error } from "console";
 import toast from "react-hot-toast/headless";
 import uniqid from "uniqid";
 import { useRouter } from "next/navigation";
