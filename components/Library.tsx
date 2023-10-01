@@ -13,7 +13,7 @@ const Library = () => {
 
     const onClick = () => {
        if (!user) {
-           authModal.onOpen();
+          return authModal.onOpen();
        }
 
        // TODO: Check for a subscription
