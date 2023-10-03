@@ -15,7 +15,7 @@ export interface Product {
     active?: boolean;
     description?: string;
     name?: string;
-    images?: string[];
+    image?: string;
     metadata?: Stripe.Metadata;
 }
 

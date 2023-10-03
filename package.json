@@ -11,10 +11,12 @@
   "dependencies": {
     "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-slider": "^1.1.2",
+    "@stripe/stripe-js": "^2.1.7",
     "@supabase/auth-helpers-nextjs": "^0.8.1",
     "@supabase/auth-helpers-react": "^0.4.2",
     "@supabase/auth-ui-react": "^0.4.5",
     "@supabase/auth-ui-shared": "^0.1.7",
+    "@supabase/supabase-js": "^2.37.0",
     "next": "latest",
     "query-string": "^8.1.0",
     "react": "latest",
