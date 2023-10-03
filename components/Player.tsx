@@ -1,5 +1,6 @@
 "use client"
 
+import PlayerContent from "./PlayerContent";
 import useGetSongById from "@/hooks/useGetSongById";
 import useLoadSongUrl from "@/hooks/useLoadSongUrl";
 import usePlayer from "@/hooks/usePlayer"
@@ -23,7 +24,11 @@ const Player = () => {
                 px-4
             "
         >
-            This is the player
+            <PlayerContent
+                key={songUrl}
+                song={song}
+                songUrl={songUrl}
+            />
         </div>
     )
 }
